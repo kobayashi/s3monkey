@@ -1,7 +1,7 @@
 pyS3FS: Access your S3 buckets like they're native files
 ========================================================
 
-Platforms like `Heroku _<https://heroku.com/>`_ don't allow for FUSE filesystem
+Platforms like `Heroku <https://heroku.com/>`_ don't allow for FUSE filesystem
 usage, so I had to get a bit creative.
 
 Introducing, **pyS3FS**, a library that mocks out all standard Python library
