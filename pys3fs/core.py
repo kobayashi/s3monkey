@@ -1,9 +1,12 @@
 import os
 import sys
 
+# Path hacking, for vendored pyfakefs.
+sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
+
 import chardet
 import bucketstore
-import pyfakefs.fake_filesystem as fake_fs
+from pyfakefs import fake_filesystem as fake_fs
 from pyfakefs.fake_filesystem_unittest import Patcher
 from pyfakefs import mox3_stubout, fake_filesystem, fake_pathlib, fake_filesystem_shutil
 
