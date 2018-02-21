@@ -19,10 +19,20 @@ Usage
     $ AWS_ACCESS_KEY_ID=xxxxxxxxxxx
     $ AWS_SECRET_ACCESS_KEY=xxxxxxxxxxx
 
-Create a ``test`` key on S3, with the contents of ``hello``::
+Basic usage::
+
+    from pys3fs import S3FS
 
     with S3FS(bucket_name='media.kennethreitz.com', mount_point='/app/data') as fs:
 
+        # Create a 'test' key on S3, with the contents of 'hello'.
         with open('/app/data/test', 'w') as f:
             f.write('hello')
+
+        # List the keys in the S3 bucket.
+        print(os.listdir('/app/data'))
+        # ['file1.txt', 'file2.txt', 'file2.txt', 'test', …]
+
+
+
 
