@@ -27,7 +27,7 @@ Basic usage:
 
     from pys3fs import S3FS
 
-    with S3FS(bucket_name='media.kennethreitz.com', mount_point='/app/data') as fs:
+    with S3FS(bucket='media.kennethreitz.com', mount_point='/app/data') as fs:
 
         # Create a 'test' key on S3, with the contents of 'hello'.
         with open('/app/data/test', 'w') as f:

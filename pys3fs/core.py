@@ -92,10 +92,10 @@ class S3File(fake_fs.FakeFile):
 class S3FS(fake_fs.FakeFilesystem):
     """A Mocked S3 Filesystem."""
 
-    def __init__(self, bucket_name, mount_point, other_dirs=None, **kwargs):
-        super(S3FS, self).__init__(**kwargs)
-        self.bucket_name = bucket_name
-        self._bucket = None
+    def __init__(self, bucket, mount_point, other_dirs=None, **kwargs):
+        super(S3FS, self).__init__()
+        self.bucket_name = bucket
+        self.bucket = bucketstore.get(self.bucket_name, **kwargs)
         self.mount_point = mount_point
         self.patcher = S3Patcher(filesystem=self)
 
@@ -156,13 +156,3 @@ class S3FS(fake_fs.FakeFilesystem):
             return WrittenS3File, key
         else:
             return None, None
-
-    @property
-    def bucket(self):
-        if self._bucket:
-            return self._bucket
-
-        bucket = bucketstore.get(self.bucket_name, create=False)
-        self._bucket = bucket
-        return bucket
-
