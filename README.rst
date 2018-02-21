@@ -9,7 +9,7 @@ system file operations, allowing you to use already–written code to interface
 with Amazon S3.
 
 All standard library file operation modules are patched when using the provided
-context manager, including ``os``, ``io``, & ``pathlib``.
+context manager, including the built–in ``open``, ``os``, ``io``, & ``pathlib``.
 
 Usage
 -----
