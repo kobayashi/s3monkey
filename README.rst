@@ -14,12 +14,16 @@ context manager, including ``os``, ``io``, & ``pathlib``.
 Usage
 -----
 
-``AWS_ACCESS_KEY_ID`` and ``AWS_SECRET_ACCESS_KEY`` are expected to be set::
+``AWS_ACCESS_KEY_ID`` and ``AWS_SECRET_ACCESS_KEY`` are expected to be set:
+
+.. code-block:: shell
 
     $ AWS_ACCESS_KEY_ID=xxxxxxxxxxx
     $ AWS_SECRET_ACCESS_KEY=xxxxxxxxxxx
 
-Basic usage::
+Basic usage:
+
+.. code-block:: python
 
     from pys3fs import S3FS
 
