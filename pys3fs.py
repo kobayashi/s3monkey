@@ -163,14 +163,3 @@ class S3FS(fake_fs.FakeFilesystem):
         self._bucket = bucket
         return bucket
 
-
-# patcher.setUp()
-
-with S3FS('media.kennethreitz.com', '/app/data') as fs:
-
-    with open('/app/data/test', 'w') as f:
-        f.write('hello')
-
-    # print(contents)
-
-    fs.refresh()
