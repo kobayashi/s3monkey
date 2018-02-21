@@ -9,9 +9,8 @@ system file operations, allowing you to use already–written code to interface
 with Amazon S3.
 
 All standard library file operation modules are patched when using the provided
-context manager, including ``os``, ``io``, & ``pathlib``.
-
-This module only supports Python 3.
+context manager, including ``os``, ``io``, & ``pathlib``. This module only
+supports Python 3.
 
 Usage
 -----
