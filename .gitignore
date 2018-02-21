@@ -6,3 +6,5 @@
 /build/
 
 /dist/
+
+/s3monkey.egg-info/

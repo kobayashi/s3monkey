@@ -11,6 +11,8 @@ with Amazon S3.
 All standard library file operation modules are patched when using the provided
 context manager, including ``os``, ``io``, & ``pathlib``.
 
+This module only supports Python 3.
+
 Usage
 -----
 
@@ -37,6 +39,9 @@ Basic usage:
         print(os.listdir('/app/data'))
         # ['file1.txt', 'file2.txt', 'file2.txt', 'test', …]
 
+Installation
+------------
 
+.. code-block:: shell
 
-
+    $ pipenv install s3monkey
