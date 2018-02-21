@@ -1,10 +1,10 @@
-pyS3fs: Access your S3 buckets like they're native files
-========================================================
+s3monkey: Access your S3 buckets like they're native files
+========-=================================================
 
 Platforms like `Heroku <https://heroku.com/>`_ don't allow for FUSE filesystem
 usage, so I had to get a bit creative.
 
-Introducing, **pyS3fs**, a library that mocks out all standard Python library
+Introducing, **s3monkey**, a library that mocks out all standard Python library
 system file operations, allowing you to use already–written code to interface
 with Amazon S3.
 
@@ -25,7 +25,7 @@ Basic usage:
 
 .. code-block:: python
 
-    from pys3fs import S3FS
+    from s3monkey import S3FS
 
     with S3FS(bucket='media.kennethreitz.com', mount_point='/app/data') as fs:
 

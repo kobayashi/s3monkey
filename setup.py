@@ -12,7 +12,7 @@ from shutil import rmtree
 from setuptools import find_packages, setup, Command
 
 # Package meta-data.
-NAME = 'pyS3fs'
+NAME = 's3monkey'
 DESCRIPTION = 'A Python library that allows you to interact with Amazon S3 Buckets as if they are your local filesystem.'
 URL = 'https://github.com/kennethreitz/pyS3fs'
 EMAIL = 'me@kennethreitz.org'
