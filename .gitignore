@@ -2,3 +2,7 @@
 /.env
 
 /t.py
+
+/build/
+
+/dist/
