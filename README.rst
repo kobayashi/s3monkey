@@ -1,5 +1,5 @@
 s3monkey: Access your S3 buckets like they're native files
-========-=================================================
+==========================================================
 
 Platforms like `Heroku <https://heroku.com/>`_ don't allow for FUSE filesystem
 usage, so I had to get a bit creative.
