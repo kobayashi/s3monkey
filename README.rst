@@ -1,10 +1,10 @@
-pyS3FS: Access your S3 buckets like they're native files
+pyS3fs: Access your S3 buckets like they're native files
 ========================================================
 
 Platforms like `Heroku <https://heroku.com/>`_ don't allow for FUSE filesystem
 usage, so I had to get a bit creative.
 
-Introducing, **pyS3FS**, a library that mocks out all standard Python library
+Introducing, **pyS3fs**, a library that mocks out all standard Python library
 system file operations, allowing you to use already–written code to interface
 with Amazon S3.
 
