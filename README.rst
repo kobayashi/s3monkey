@@ -14,7 +14,7 @@ context manager, including the built–in ``open``, ``os``, ``io``, & ``pathlib`
 Potential Use Cases
 -------------------
 
-- Running Jupyter Notebooks on non-persistient storage (still being worked out)
+- Running Jupyter Notebooks on non-persistient storage (still being worked out).
 - Storing user uploads for Django applications (e.g. the ``media`` folder). 
 
 Usage
