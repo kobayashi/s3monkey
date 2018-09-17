@@ -11,6 +11,9 @@ with Amazon S3.
 All standard library file operation modules are patched when using the provided
 context manager, including the built–in ``open``, ``os``, ``io``, & ``pathlib``.
 
+If you're interested in financially supporting Kenneth Reitz open source, consider `visiting this link <https://cash.me/$KennethReitz>`_. Your support helps tremendously with sustainability of motivation, as Open Source is no longer part of my day job.
+
+
 Potential Use Cases
 -------------------
 
