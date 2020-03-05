@@ -14,9 +14,9 @@ from setuptools import find_packages, setup, Command
 # Package meta-data.
 NAME = 's3monkey'
 DESCRIPTION = 'A Python library that allows you to interact with Amazon S3 Buckets as if they are your local filesystem.'
-URL = 'https://github.com/kennethreitz/pyS3fs'
-EMAIL = 'me@kennethreitz.org'
-AUTHOR = 'Kenneth Reitz'
+URL = 'https://github.com/kobayashi/s3monkey'
+EMAIL = 'abok.1k@gmail.com'
+AUTHOR = 'kobayashi'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
